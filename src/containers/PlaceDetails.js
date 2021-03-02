@@ -9,8 +9,9 @@ const PlaceDetails = ({ match }) => {
   const [Uloading, setUloading] = useState(true);
   useEffect(async () => {
     const { id } = match.params;
-    const result = await axios.get(`https://13e778afa1c14e269a4d169896b5bc7c.vfs.cloud9.us-east-2.amazonaws.com/artplaces/${id}`);
-    const place = result.data;
+    console.log(id);
+    const result = await axios.get(`https://frozen-escarpment-12368.herokuapp.com/artplaces/${id}`);
+    const place = result;
     setPlace(place);
     setUloading(false);
   }, []);
