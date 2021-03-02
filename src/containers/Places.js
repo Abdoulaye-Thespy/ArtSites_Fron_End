@@ -3,15 +3,15 @@ import axios from 'axios';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-const Recettes = () => {
+const Places = () => {
   const [places, setPlaces] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(async () => {
     const PlacesList = [];
     const result = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
-    Array.prototype.push.apply( PlacesList, result.data.meals);
-    setPlaces( PlacesLis);
+    Array.prototype.push.apply( PlacesLis, result.data.meals);
+    setPlaces( PlacesList);
     setLoading(false);
   }, []);
 
@@ -30,8 +30,7 @@ const Recettes = () => {
           {places.map(lieu => (
             <li key={lieu.id}> 
             <img src={lieu.urlPic} alt={lieu.description} /> 
-            <h2>{lie98uy7t21`.
-            asw3.Location}</h2>
+            <h2>{lieu.Location}</h2>
             </li>
     
           ))}
@@ -44,19 +43,14 @@ const Recettes = () => {
   );
 };
 
-Recettes.propTypes = {
-  category: PropTypes.string.isRequired,
-  handleFilterChange: PropTypes.func.isRequired,
-  showDetails: PropTypes.func.isRequired,
+Places.propTypes = {
 };
 
-const mapStateToProps = state => ({
-  category: state.Filtering,
+const mapStateToProps = ()=> ({
+
 });
 
-const mapDispatchToProps = dispatch => ({
-  handleFilterChange: param => dispatch(filterBook(param)),
-  showDetails: param => dispatch(getrecette(param)),
+const mapDispatchToProps = () => ({
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Recettes);
+export default connect(mapStateToProps, mapDispatchToProps)(Places);
