@@ -5,12 +5,14 @@ import {
 } from 'react-router-dom';
 // import Navbar from './components/navbar';
 import Places from './containers/Places';
+import PlaceDetails from './containers/PlaceDetails';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Places} />
+        <Route exact path="/place/:id" component={PlaceDetails} />
       </Switch>
     </Router>
   );

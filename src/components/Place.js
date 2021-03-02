@@ -8,6 +8,7 @@ const Place = ({ place }) => (
       <img src={place.urlPic} alt={place.Location} />
     </div>
     <div className="">
+      <h2>{place.Location}</h2>
 
       <Link
         to={{
