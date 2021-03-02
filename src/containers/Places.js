@@ -9,9 +9,9 @@ const Places = () => {
 
   useEffect(async () => {
     const PlacesList = [];
-    const result = await axios.get(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
-    Array.prototype.push.apply( PlacesLis, result.data.meals);
-    setPlaces( PlacesList);
+    const result = await axios.get('https://frozen-escarpment-12368.herokuapp.com/artplaces/');
+    Array.prototype.push.apply(PlacesList, result.data.meals);
+    setPlaces(PlacesList);
     setLoading(false);
   }, []);
 
@@ -19,25 +19,22 @@ const Places = () => {
     <h2>Loading....</h2>
   ) : (
     <>
-      <section>
 
-
-        <h2 className="">
-            Beautiful places for you to visit
-        </h2>
-        <div className="places">
+      <h2 className="">
+        Beautiful places for you to visit
+      </h2>
+      <div className="places">
         <ul>
           {places.map(lieu => (
-            <li key={lieu.id}> 
-            <img src={lieu.urlPic} alt={lieu.description} /> 
-            <h2>{lieu.Location}</h2>
+            <li key={lieu.id}>
+              <img src={lieu.urlPic} alt={lieu.description} />
+              <h2>{lieu.Location}</h2>
             </li>
-    
-          ))}
-          <>
-        </div>
 
-      </section>
+          ))}
+        </ul>
+
+      </div>
 
     </>
   );
@@ -46,7 +43,7 @@ const Places = () => {
 Places.propTypes = {
 };
 
-const mapStateToProps = ()=> ({
+const mapStateToProps = () => ({
 
 });
 
