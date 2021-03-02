@@ -11,8 +11,8 @@ const Places = () => {
   useEffect(async () => {
     console.log('xxxx');
     const result = await axios.get('https://frozen-escarpment-12368.herokuapp.com/artplaces');
-    const results = result.data
-    setPlaces(result);
+    const results = result.data.data;
+    setPlaces(results);
     console.log(places);
     console.log(results);
     console.log(result);
