@@ -1,7 +1,7 @@
 
 .body {
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 img {
@@ -11,7 +11,6 @@ img {
 .welcome {
  height: 40rem;
  border-radius: 2rem;
- padding: 4rem;
  text-align: center;
 }
 
@@ -19,6 +18,7 @@ img {
 .welcome {
  background-color:  #fff;
  opacity: 0.9;
+  padding: 4rem;
 }
 
 .input1 {
@@ -48,4 +48,10 @@ img {
 
 .pass_F {
     margin-top: 10rem;
+}
+
+.head {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
 }

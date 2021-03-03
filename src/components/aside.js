@@ -1,12 +1,25 @@
 import React from 'react';
+import head from '../back4.PNG';
 
 const Aside = () => (
   <>
-    <h1>razak</h1>
-    <section className="body container">
-      <div className="navbar">
-        Navbar
-      </div>
+    <section className="body container-fluid">
+      <img src={head} className="img-circle head" alt="Cinque Terre" />
+      <h4>TheSpy</h4>
+      <p>@TheSpy</p>
+    </section>
+
+    <section className="body container-fluid ">
+      <p>Dashboard</p>
+      <p>Notification</p>
+      <p>@TheSpy</p>
+      <p>Messages</p>
+      <p>Friends</p>
+    </section>
+
+    <section className="body container-fluid">
+      <p>Help</p>
+      <p>Logout</p>
     </section>
   </>
 );
