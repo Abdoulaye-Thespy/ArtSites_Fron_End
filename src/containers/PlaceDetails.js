@@ -11,7 +11,8 @@ const PlaceDetails = ({ match }) => {
     const { id } = match.params;
     console.log(id);
     const result = await axios.get(`https://frozen-escarpment-12368.herokuapp.com/artplaces/${id}`);
-    const place = result;
+    const place = result.data.data;
+    console.log(result);
     setPlace(place);
     setUloading(false);
   }, []);

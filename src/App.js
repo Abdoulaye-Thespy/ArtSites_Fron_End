@@ -6,15 +6,19 @@ import {
 // import Navbar from './components/navbar';
 import Places from './containers/Places';
 import PlaceDetails from './containers/PlaceDetails';
+import Welcome from './components/welcome';
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Places} />
-        <Route exact path="/place/:id" component={PlaceDetails} />
-      </Switch>
-    </Router>
+    <section className="app">
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route exact path="/places" component={Places} />
+          <Route exact path="/place/:id" component={PlaceDetails} />
+        </Switch>
+      </Router>
+    </section>
   );
 }
 
