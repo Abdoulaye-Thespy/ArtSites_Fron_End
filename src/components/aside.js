@@ -1,6 +1,6 @@
 import React from 'react';
 
-const navBar = () => (
+const Aside = () => (
   <>
     <h1>razak</h1>
     <section className="body container">
@@ -11,4 +11,4 @@ const navBar = () => (
   </>
 );
 
-export default navBar;
+export default Aside;
