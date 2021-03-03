@@ -9,9 +9,14 @@ img {
 }
 
 .welcome {
- background-color: #ccc;
- opacity: 0.6;
+ background-color:  #fff;
+ opacity: 0.8;
  height: 40rem;
  border-radius: 2rem;
  padding: 4rem;
+ text-align: center;
+}
+
+.input1 {
+ display: block;
 }

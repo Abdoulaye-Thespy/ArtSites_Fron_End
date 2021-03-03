@@ -1,14 +1,22 @@
 import React from 'react';
-import navBar from './navbar';
 
 const Welcome = () => (
-  <section className="body container">
-    <navBar />
-    <div className="welcome">
+  <>
+    <section className="body container">
+      <div className="welcome ">
 
-      hello
-    </div>
-  </section>
+        <h1>Sign in</h1>
+        <p> Hello there Sign and start</p>
+
+        <form>
+          <input type="email" className="input1" />
+          <input type="password" />
+          <button type="submit" className="btn btn-outline-primary">Sign in</button>
+        </form>
+
+      </div>
+    </section>
+  </>
 );
 
 export default Welcome;
