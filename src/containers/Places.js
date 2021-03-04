@@ -4,6 +4,7 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import Place from '../components/Place';
 import Aside from '../components/aside';
+import NavBar from './navbar';
 
 const Places = () => {
   const [places, setPlaces] = useState([]);
@@ -35,9 +36,7 @@ const Places = () => {
 
             <section>
 
-              <h2 className="">
-                Beuautiful place to visit
-              </h2>
+              <NavBar />
               <div className="recettes">
                 {places.map(lieu => (
                   /* eslint-disable no-debugger, max-len */

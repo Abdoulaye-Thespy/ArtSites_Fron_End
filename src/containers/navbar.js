@@ -2,15 +2,21 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-const navBar = () => {
+const NavBar = () => (
   <>
-  <ul>
-  
-  <ul>
+    <h1>razak</h1>
+    <section>
+      <ul>
+        <li><i className="fas fa-bars">ii</i></li>
+        <li>Art/Culture...</li>
+        <li><i className="fas fa-search">ii</i></li>
+      </ul>
+    </section>
   </>
-};
 
-navBAr.propTypes = {
+);
+
+NavBar.propTypes = {
 };
 
 const mapStateToProps = () => ({
@@ -20,4 +26,4 @@ const mapStateToProps = () => ({
 const mapDispatchToProps = () => ({
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Places);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
