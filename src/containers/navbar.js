@@ -4,9 +4,8 @@ import { connect } from 'react-redux';
 
 const NavBar = () => (
   <>
-    <h1>razak</h1>
-    <section>
-      <ul>
+    <section className="fixed">
+      <ul className="nav_items nav">
         <li><i className="fas fa-bars">ii</i></li>
         <li>Art/Culture...</li>
         <li><i className="fas fa-search">ii</i></li>

@@ -3,24 +3,26 @@ import head from '../back4.PNG';
 
 const Aside = () => (
   <>
-    <section className="body container-fluid">
-      <img src={head} className="img-circle head" alt="Cinque Terre" />
-      <h4>TheSpy</h4>
-      <p>@TheSpy</p>
-    </section>
+    <div className="fixed">
+      <section className="body container-fluid">
+        <img src={head} className="img-circle head" alt="Cinque Terre" />
+        <h4>TheSpy</h4>
+        <p>@TheSpy</p>
+      </section>
 
-    <section className="body container-fluid ">
-      <p>Dashboard</p>
-      <p>Notification</p>
-      <p>@TheSpy</p>
-      <p>Messages</p>
-      <p>Friends</p>
-    </section>
+      <section className="body container-fluid ">
+        <p>Dashboard</p>
+        <p>Notification</p>
+        <p>@TheSpy</p>
+        <p>Messages</p>
+        <p>Friends</p>
+      </section>
 
-    <section className="body container-fluid">
-      <p>Help</p>
-      <p>Logout</p>
-    </section>
+      <section className="body container-fluid">
+        <p>Help</p>
+        <p>Logout</p>
+      </section>
+    </div>
   </>
 );
 

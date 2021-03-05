@@ -36,8 +36,8 @@ const Places = () => {
 
             <section>
 
-              <NavBar />
-              <div className="recettes">
+              <NavBar className="container" />
+              <div className="plac_div">
                 {places.map(lieu => (
                   /* eslint-disable no-debugger, max-len */
                   <Place key={lieu.id} place={lieu} />
