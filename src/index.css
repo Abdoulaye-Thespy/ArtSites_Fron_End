@@ -79,7 +79,7 @@ img {
   grid-gap: 2rem;
   align-items: start;
    z-index: -1;
-   padding-top: 2rem;
+   padding: 2rem 2rem 0 -1rem;
 
 }
 
