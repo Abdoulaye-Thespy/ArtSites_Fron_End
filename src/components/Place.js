@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Place = ({ place }) => (
-  <section className="card">
+  <div className="card">
     <div className="">
       <img src={place.urlPic} alt={place.Location} />
     </div>
@@ -22,7 +22,7 @@ const Place = ({ place }) => (
         </button>
       </Link>
     </div>
-  </section>
+  </div>
 );
 
 Place.propTypes = {
