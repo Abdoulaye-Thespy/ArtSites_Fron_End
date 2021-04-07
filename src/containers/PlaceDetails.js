@@ -21,32 +21,30 @@ const PlaceDetails = ({ match }) => {
     <h1>Loading</h1>
   ) : (
     <>
-      <section className="">
-        <div className="container welcome">
-          <h1 className="text-center">{place.Location}</h1>
-          <div className="row">
-            <div className="col-md-8 card card-body">
-              <img src={place.urlPic} alt="" />
-            </div>
-
-            <div className="col-md-4 ">
-              <h2>Description</h2>
-              <ul className="ingredients">
-                <li className="item">
-                  {place.description}
-                </li>
-              </ul>
-              <h2 className="instructions">Instructions</h2>
-            </div>
+      <div className="container welcome">
+        <h1 className="text-center">{place.Location}</h1>
+        <div className="row">
+          <div className="col-md-8 card card-body">
+            <img src={place.urlPic} alt="" />
           </div>
-          <Link to="/" className="text-center">
-            <button type="button" className="btn btn-info btn-details">
-              Back to Menu
-            </button>
-          </Link>
-        </div>
 
-      </section>
+          <div className="col-md-4 ">
+            <h2>Description</h2>
+            <ul className="ingredients">
+              <li className="item">
+                {place.description}
+              </li>
+            </ul>
+            <h2 className="instructions">Instructions</h2>
+
+            <Link to="/" className="text-center">
+              <button type="button" className="btn btn-info btn-details">
+                Back to Menu
+              </button>
+            </Link>
+          </div>
+        </div>
+      </div>
 
     </>
   );

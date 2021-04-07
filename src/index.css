@@ -9,7 +9,7 @@ img {
 }
 
 .welcome {
- height: 40rem;
+ min-height: 100VH;
  border-radius: 2rem;
  text-align: center;
 }
@@ -99,4 +99,15 @@ img {
 
 .nav {
   background-color: #fff;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+ .welcome {
+  border-radius: 0rem;
+ }
 }
