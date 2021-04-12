@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import NavBar from './navbar';
 
 const PlaceDetails = ({ match }) => {
   const [place, setPlace] = useState([]);
@@ -22,24 +23,20 @@ const PlaceDetails = ({ match }) => {
   ) : (
     <>
       <div className="container welcome">
+        <NavBar className="container-fluid" />
         <h1 className="text-center">{place.Location}</h1>
         <div className="row">
           <div className="col-md-8 card card-body">
             <img src={place.urlPic} alt="" />
           </div>
 
-          <div className="col-md-4 ">
-            <h2>Description</h2>
-            <ul className="ingredients">
-              <li className="item">
-                {place.description}
-              </li>
-            </ul>
-            <h2 className="instructions">Instructions</h2>
+          <div className="col-md-4">
+            <h5 className="details">About this place</h5>
+            <p className="details">{place.description}</p>
 
             <Link to="/" className="text-center">
-              <button type="button" className="btn btn-info btn-details">
-                Back to Menu
+              <button type="button" className="btn btn-fav">
+                BOOKMARK
               </button>
             </Link>
           </div>

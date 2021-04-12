@@ -28,7 +28,7 @@ const Places = () => {
 
       <div className="container-fluid places">
         <div className="row">
-          <div className="col-sm-2">
+          <div className="col-sm-2 asides">
 
             <Aside />
           </div>

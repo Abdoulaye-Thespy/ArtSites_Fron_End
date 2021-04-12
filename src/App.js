@@ -7,6 +7,7 @@ import {
 import Places from './containers/Places';
 import PlaceDetails from './containers/PlaceDetails';
 import Welcome from './components/welcome';
+import './fontawesome';
 
 function App() {
   return (

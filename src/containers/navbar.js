@@ -1,14 +1,16 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = () => (
   <>
-    <section className="fixed">
-      <ul className="nav_items nav">
-        <li><i className="fas fa-bars">ii</i></li>
+    <section className="fixed container">
+      <ul className="nav_items">
+        <li><FontAwesomeIcon icon={faBars} /></li>
         <li>Art/Culture...</li>
-        <li><i className="fas fa-search">ii</i></li>
+        <li><FontAwesomeIcon icon={faSearch} /></li>
       </ul>
     </section>
   </>
