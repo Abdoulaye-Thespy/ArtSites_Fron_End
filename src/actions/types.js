@@ -1,0 +1,1 @@
+export default const GET_LOCATION = 'Get_location';
