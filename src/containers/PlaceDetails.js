@@ -34,7 +34,7 @@ const PlaceDetails = ({ match }) => {
             <h5 className="details">About this place</h5>
             <p className="details">{place.description}</p>
 
-            <Link to="/" className="text-center">
+            <Link to="/places" className="text-center">
               <button type="button" className="btn btn-fav">
                 BOOKMARK
               </button>
