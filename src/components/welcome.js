@@ -15,6 +15,7 @@ const Welcome = () => (
 
           <Link to="/places" className="text-center">
             <button type="submit" className="btn sign_in_btn">Sign in</button>
+
           </Link>
         </form>
 
